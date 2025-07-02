@@ -64,6 +64,14 @@
         "env": []
     },
     {
+        "id": "ebc0db16fd47daa1",
+        "type": "tab",
+        "label": "Environment",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "84e6f2294f1fef8c",
         "type": "group",
         "z": "fd82760498507563",
@@ -8290,6 +8298,440 @@
         "info": "",
         "x": 660,
         "y": 580,
+        "wires": []
+    },
+    {
+        "id": "0f4f987967cd5ee1",
+        "type": "inject",
+        "z": "ebc0db16fd47daa1",
+        "name": "Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "FIWARE_SERVICE",
+        "payloadType": "str",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "0993ad2062d69031"
+            ]
+        ]
+    },
+    {
+        "id": "0993ad2062d69031",
+        "type": "function",
+        "z": "ebc0db16fd47daa1",
+        "name": "env.get",
+        "func": "msg.payload = env.get(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 60,
+        "wires": [
+            [
+                "7fff2e2870ed2234"
+            ]
+        ]
+    },
+    {
+        "id": "7fff2e2870ed2234",
+        "type": "debug",
+        "z": "ebc0db16fd47daa1",
+        "name": "FIWARE_SERVICE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 510,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a21909c95741053a",
+        "type": "inject",
+        "z": "ebc0db16fd47daa1",
+        "name": "Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "STELLIO_API_URL",
+        "payloadType": "str",
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "c24f74b7f81ba39c"
+            ]
+        ]
+    },
+    {
+        "id": "c24f74b7f81ba39c",
+        "type": "function",
+        "z": "ebc0db16fd47daa1",
+        "name": "env.get",
+        "func": "msg.payload = env.get(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 140,
+        "wires": [
+            [
+                "c6f87505adbc0df9"
+            ]
+        ]
+    },
+    {
+        "id": "c6f87505adbc0df9",
+        "type": "debug",
+        "z": "ebc0db16fd47daa1",
+        "name": "STELLIO_API_URL",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 520,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "04372a5ba0519716",
+        "type": "inject",
+        "z": "ebc0db16fd47daa1",
+        "name": "Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "POSTGRES_USER",
+        "payloadType": "str",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "d7b1e2128cf5250c"
+            ]
+        ]
+    },
+    {
+        "id": "d7b1e2128cf5250c",
+        "type": "function",
+        "z": "ebc0db16fd47daa1",
+        "name": "env.get",
+        "func": "msg.payload = env.get(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "d83f1df6fbf36478"
+            ]
+        ]
+    },
+    {
+        "id": "d83f1df6fbf36478",
+        "type": "debug",
+        "z": "ebc0db16fd47daa1",
+        "name": "POSTGRES_USER",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 520,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0c53e0b744614928",
+        "type": "inject",
+        "z": "ebc0db16fd47daa1",
+        "name": "Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "POSTGRES_PASS",
+        "payloadType": "str",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "c752d2dade786857"
+            ]
+        ]
+    },
+    {
+        "id": "c752d2dade786857",
+        "type": "function",
+        "z": "ebc0db16fd47daa1",
+        "name": "env.get",
+        "func": "msg.payload = env.get(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 300,
+        "wires": [
+            [
+                "85f3f64028d64877"
+            ]
+        ]
+    },
+    {
+        "id": "85f3f64028d64877",
+        "type": "debug",
+        "z": "ebc0db16fd47daa1",
+        "name": "POSTGRES_PASS",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 510,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1eb0829b5dc90eee",
+        "type": "inject",
+        "z": "ebc0db16fd47daa1",
+        "name": "Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "WM_USERNAME",
+        "payloadType": "str",
+        "x": 110,
+        "y": 380,
+        "wires": [
+            [
+                "288a4c07f05b86b8"
+            ]
+        ]
+    },
+    {
+        "id": "288a4c07f05b86b8",
+        "type": "function",
+        "z": "ebc0db16fd47daa1",
+        "name": "env.get",
+        "func": "msg.payload = env.get(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 380,
+        "wires": [
+            [
+                "24434421324baf32"
+            ]
+        ]
+    },
+    {
+        "id": "24434421324baf32",
+        "type": "debug",
+        "z": "ebc0db16fd47daa1",
+        "name": "WM_USERNAME",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 510,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "2d726c7f55e1c6e2",
+        "type": "inject",
+        "z": "ebc0db16fd47daa1",
+        "name": "Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "WM_PASSWORD",
+        "payloadType": "str",
+        "x": 110,
+        "y": 460,
+        "wires": [
+            [
+                "b470eb151bdbcdfe"
+            ]
+        ]
+    },
+    {
+        "id": "b470eb151bdbcdfe",
+        "type": "function",
+        "z": "ebc0db16fd47daa1",
+        "name": "env.get",
+        "func": "msg.payload = env.get(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "d787a8fb01a1b8f9"
+            ]
+        ]
+    },
+    {
+        "id": "d787a8fb01a1b8f9",
+        "type": "debug",
+        "z": "ebc0db16fd47daa1",
+        "name": "WM_PASSWORD",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 510,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "16e8f5a2ef55a87e",
+        "type": "inject",
+        "z": "ebc0db16fd47daa1",
+        "name": "Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "TTI_PASSWORD",
+        "payloadType": "str",
+        "x": 110,
+        "y": 540,
+        "wires": [
+            [
+                "903cc60be4e05a0e"
+            ]
+        ]
+    },
+    {
+        "id": "903cc60be4e05a0e",
+        "type": "function",
+        "z": "ebc0db16fd47daa1",
+        "name": "env.get",
+        "func": "msg.payload = env.get(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 540,
+        "wires": [
+            [
+                "023212b2809fe1f4"
+            ]
+        ]
+    },
+    {
+        "id": "023212b2809fe1f4",
+        "type": "debug",
+        "z": "ebc0db16fd47daa1",
+        "name": "TTI_PASSWORD",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 510,
+        "y": 540,
         "wires": []
     }
 ]
