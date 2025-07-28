@@ -6369,7 +6369,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "TTI_PASSWORD",
+        "payload": "WM_CLIENT_SECRET",
         "payloadType": "str",
         "x": 110,
         "y": 540,
@@ -6403,6 +6403,68 @@
         "id": "023212b2809fe1f4",
         "type": "debug",
         "z": "ebc0db16fd47daa1",
+        "name": "WM_CLIENT_SECRET",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 530,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "9e0fc4b471ee376a",
+        "type": "inject",
+        "z": "ebc0db16fd47daa1",
+        "name": "Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "TTI_PASSWORD",
+        "payloadType": "str",
+        "x": 110,
+        "y": 620,
+        "wires": [
+            [
+                "9a0ca16d0d25397b"
+            ]
+        ]
+    },
+    {
+        "id": "9a0ca16d0d25397b",
+        "type": "function",
+        "z": "ebc0db16fd47daa1",
+        "name": "env.get",
+        "func": "msg.payload = env.get(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 620,
+        "wires": [
+            [
+                "3baed38a05d0b49c"
+            ]
+        ]
+    },
+    {
+        "id": "3baed38a05d0b49c",
+        "type": "debug",
+        "z": "ebc0db16fd47daa1",
         "name": "TTI_PASSWORD",
         "active": true,
         "tosidebar": true,
@@ -6413,7 +6475,131 @@
         "statusVal": "payload",
         "statusType": "auto",
         "x": 510,
-        "y": 540,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c33caf78dd8cb87c",
+        "type": "inject",
+        "z": "ebc0db16fd47daa1",
+        "name": "Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "DKAN_PROD_USER",
+        "payloadType": "str",
+        "x": 110,
+        "y": 700,
+        "wires": [
+            [
+                "b0a765db683d71b5"
+            ]
+        ]
+    },
+    {
+        "id": "b0a765db683d71b5",
+        "type": "function",
+        "z": "ebc0db16fd47daa1",
+        "name": "env.get",
+        "func": "msg.payload = env.get(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 700,
+        "wires": [
+            [
+                "a20cc5325d470bf3"
+            ]
+        ]
+    },
+    {
+        "id": "a20cc5325d470bf3",
+        "type": "debug",
+        "z": "ebc0db16fd47daa1",
+        "name": "DKAN_PROD_USER",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 520,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "24983d717d3024dd",
+        "type": "inject",
+        "z": "ebc0db16fd47daa1",
+        "name": "Name",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "DKAN_PROD_PASSWORD",
+        "payloadType": "str",
+        "x": 110,
+        "y": 780,
+        "wires": [
+            [
+                "5cbaf94f14d1be53"
+            ]
+        ]
+    },
+    {
+        "id": "5cbaf94f14d1be53",
+        "type": "function",
+        "z": "ebc0db16fd47daa1",
+        "name": "env.get",
+        "func": "msg.payload = env.get(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 780,
+        "wires": [
+            [
+                "a08c5d750a1c41cb"
+            ]
+        ]
+    },
+    {
+        "id": "a08c5d750a1c41cb",
+        "type": "debug",
+        "z": "ebc0db16fd47daa1",
+        "name": "DKAN_PROD_PASSWORD",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 540,
+        "y": 780,
         "wires": []
     }
 ]
