@@ -117,8 +117,8 @@
             "4572ae7826f8a221",
             "5ab2ad979e608b78"
         ],
-        "x": 1018,
-        "y": 247,
+        "x": 28,
+        "y": 907,
         "w": 1048,
         "h": 600
     },
@@ -249,7 +249,7 @@
         "id": "55f07cfc0580dabd",
         "type": "group",
         "z": "06d7c31d0c65ced0",
-        "name": "Delete Subscription NGSI-LD",
+        "name": "Delete Subscriptions",
         "style": {
             "fill": "#ff7f7f",
             "label": true,
@@ -257,15 +257,21 @@
             "color": "#000000"
         },
         "nodes": [
-            "29432c5f74f85fdf",
-            "18acf3481670be07",
-            "c4880210854be9fe",
-            "7e4e4fbd76f11f99"
+            "975092cdea5762be",
+            "7bf9d05afa7f6bb7",
+            "dec0da42277880d2",
+            "68f7113c33a70625",
+            "2324518177c417b0",
+            "511a8dbe8d0825a1",
+            "17acb439e1677f10",
+            "dc53eea83067c843",
+            "6d291d06871d78a6",
+            "22a1958646c2fbc5"
         ],
         "x": 34,
-        "y": 419,
-        "w": 812,
-        "h": 82
+        "y": 719,
+        "w": 872,
+        "h": 262
     },
     {
         "id": "9bb62de76d856a4d",
@@ -285,7 +291,7 @@
             "bdc544139ebcbdf3"
         ],
         "x": 34,
-        "y": 299,
+        "y": 599,
         "w": 872,
         "h": 82
     },
@@ -313,7 +319,7 @@
             "c345fc4b7d75c548"
         ],
         "x": 34,
-        "y": 539,
+        "y": 319,
         "w": 1252,
         "h": 242
     },
@@ -500,9 +506,9 @@
             "88b5c97dc133bd77",
             "bd1a7d4ad0e78fc7"
         ],
-        "x": 1044,
-        "y": 273,
-        "w": 922,
+        "x": 54,
+        "y": 933,
+        "w": 972,
         "h": 334
     },
     {
@@ -546,8 +552,8 @@
             "3830d4356ccb51fa",
             "255b4d1d1f42121f"
         ],
-        "x": 1394,
-        "y": 659,
+        "x": 404,
+        "y": 1319,
         "w": 592,
         "h": 162
     },
@@ -762,8 +768,8 @@
             "41630822d55aab16",
             "c3bf762891ecdd43"
         ],
-        "x": 1314,
-        "y": 299,
+        "x": 324,
+        "y": 959,
         "w": 512,
         "h": 282
     },
@@ -1969,8 +1975,8 @@
         "topic": "",
         "payload": "[{\"station_id\":107381,\"station_name\":\"Uni Eichbergstraße\",\"station_location\":{\"lat\":0,\"lon\":0}},{\"station_id\":107382,\"station_name\":\"Schiffstraße\",\"station_location\":{\"lat\":0,\"lon\":0}},{\"station_id\":107383,\"station_name\":\"Herose Fahrradbrücke\",\"station_location\":{\"lat\":0,\"lon\":0}}]",
         "payloadType": "json",
-        "x": 1180,
-        "y": 360,
+        "x": 190,
+        "y": 1020,
         "wires": [
             [
                 "bd021ccd9dd0be08"
@@ -1990,8 +1996,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1570,
-        "y": 360,
+        "x": 580,
+        "y": 1020,
         "wires": [
             [
                 "39ea9014305d9f71"
@@ -2015,8 +2021,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1750,
-        "y": 340,
+        "x": 760,
+        "y": 1000,
         "wires": [
             [
                 "3a30412e18ca3567",
@@ -2037,8 +2043,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1590,
-        "y": 460,
+        "x": 600,
+        "y": 1120,
         "wires": [
             [
                 "41630822d55aab16"
@@ -2057,8 +2063,8 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 1390,
-        "y": 360,
+        "x": 400,
+        "y": 1020,
         "wires": [
             [
                 "15e51ef8641d9cf5"
@@ -2086,8 +2092,8 @@
         "reduceInit": "",
         "reduceInitType": "num",
         "reduceFixup": "",
-        "x": 1390,
-        "y": 540,
+        "x": 400,
+        "y": 1200,
         "wires": [
             [
                 "c3bf762891ecdd43",
@@ -2109,8 +2115,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1600,
-        "y": 540,
+        "x": 610,
+        "y": 1200,
         "wires": []
     },
     {
@@ -2120,8 +2126,8 @@
         "g": "9cf769a0de6323b5",
         "name": "Koordinaten manuell hinterlegt",
         "info": "",
-        "x": 1820,
-        "y": 440,
+        "x": 880,
+        "y": 1120,
         "wires": []
     },
     {
@@ -2138,8 +2144,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1960,
-        "y": 380,
+        "x": 970,
+        "y": 1040,
         "wires": []
     },
     {
@@ -2258,8 +2264,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1560,
-        "y": 700,
+        "x": 570,
+        "y": 1360,
         "wires": [
             [
                 "f647b91db2232508",
@@ -2281,8 +2287,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1860,
-        "y": 700,
+        "x": 870,
+        "y": 1360,
         "wires": []
     },
     {
@@ -2302,8 +2308,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1490,
-        "y": 780,
+        "x": 500,
+        "y": 1440,
         "wires": [
             [
                 "3830d4356ccb51fa",
@@ -2324,8 +2330,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
-        "y": 780,
+        "x": 700,
+        "y": 1440,
         "wires": [
             []
         ]
@@ -2344,8 +2350,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1850,
-        "y": 780,
+        "x": 860,
+        "y": 1440,
         "wires": []
     },
     {
@@ -5653,100 +5659,6 @@
         "wires": []
     },
     {
-        "id": "29432c5f74f85fdf",
-        "type": "inject",
-        "z": "06d7c31d0c65ced0",
-        "g": "55f07cfc0580dabd",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 460,
-        "wires": [
-            [
-                "18acf3481670be07"
-            ]
-        ]
-    },
-    {
-        "id": "18acf3481670be07",
-        "type": "function",
-        "z": "06d7c31d0c65ced0",
-        "g": "55f07cfc0580dabd",
-        "name": "function 5",
-        "func": "msg.url = env.get(\"STELLIO_API_URL\");\nmsg.url += \"/ngsi-ld/v1/subscriptions/urn:ngsi-ld:Subscription:7a6c15ea-800e-47b7-aaa5-6b4d0b8167b2\";\n\nmsg.headers = {};\nmsg.headers['Content-Type'] = 'application/ld+json';\nmsg.headers['NGSILD-Tenant'] = env.get(\"FIWARE_SERVICE\")\n\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 460,
-        "wires": [
-            [
-                "c4880210854be9fe"
-            ]
-        ]
-    },
-    {
-        "id": "c4880210854be9fe",
-        "type": "http request",
-        "z": "06d7c31d0c65ced0",
-        "g": "55f07cfc0580dabd",
-        "name": "",
-        "method": "DELETE",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 530,
-        "y": 460,
-        "wires": [
-            [
-                "7e4e4fbd76f11f99"
-            ]
-        ]
-    },
-    {
-        "id": "7e4e4fbd76f11f99",
-        "type": "debug",
-        "z": "06d7c31d0c65ced0",
-        "g": "55f07cfc0580dabd",
-        "name": "debug 18",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 460,
-        "wires": []
-    },
-    {
         "id": "e03162aa717f31b7",
         "type": "comment",
         "z": "06d7c31d0c65ced0",
@@ -5780,7 +5692,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 130,
-        "y": 340,
+        "y": 640,
         "wires": [
             [
                 "080ab472d262251c"
@@ -5801,7 +5713,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 340,
+        "y": 640,
         "wires": [
             [
                 "c75e48673f6853fc"
@@ -5826,7 +5738,7 @@
         "senderr": false,
         "headers": [],
         "x": 590,
-        "y": 340,
+        "y": 640,
         "wires": [
             [
                 "bdc544139ebcbdf3"
@@ -5848,7 +5760,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 800,
-        "y": 340,
+        "y": 640,
         "wires": []
     },
     {
@@ -5869,7 +5781,7 @@
         "senderr": false,
         "headers": [],
         "x": 530,
-        "y": 740,
+        "y": 520,
         "wires": [
             [
                 "af2b75ee75418e36"
@@ -5899,7 +5811,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 130,
-        "y": 620,
+        "y": 400,
         "wires": [
             [
                 "bc522295a33c44e8"
@@ -5921,7 +5833,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 730,
-        "y": 740,
+        "y": 520,
         "wires": []
     },
     {
@@ -5938,7 +5850,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 740,
+        "y": 520,
         "wires": [
             [
                 "50f6c90273d64dec"
@@ -5959,7 +5871,7 @@
         "finalize": "",
         "libs": [],
         "x": 800,
-        "y": 620,
+        "y": 400,
         "wires": [
             [
                 "922ae5c915dbfef5"
@@ -5980,7 +5892,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 620,
+        "y": 400,
         "wires": [
             [
                 "e22b47130cab0aff"
@@ -6005,7 +5917,7 @@
         "senderr": false,
         "headers": [],
         "x": 570,
-        "y": 620,
+        "y": 400,
         "wires": [
             [
                 "2a90adb0c7c87f69"
@@ -6032,7 +5944,7 @@
         "repair": false,
         "outputs": 2,
         "x": 290,
-        "y": 680,
+        "y": 460,
         "wires": [
             [
                 "dd05473a52b6b668"
@@ -6056,7 +5968,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 520,
-        "y": 680,
+        "y": 460,
         "wires": []
     },
     {
@@ -6067,8 +5979,232 @@
         "name": "Because of what Stellio does to the type used in subcriptions, the check is only checking if existing subscriptions are on a type containing a specified datamodel and not if it is equal to.",
         "info": "",
         "x": 660,
-        "y": 580,
+        "y": 360,
         "wires": []
+    },
+    {
+        "id": "975092cdea5762be",
+        "type": "inject",
+        "z": "06d7c31d0c65ced0",
+        "g": "55f07cfc0580dabd",
+        "name": "Go!",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 760,
+        "wires": [
+            [
+                "7bf9d05afa7f6bb7"
+            ]
+        ]
+    },
+    {
+        "id": "7bf9d05afa7f6bb7",
+        "type": "function",
+        "z": "06d7c31d0c65ced0",
+        "g": "55f07cfc0580dabd",
+        "name": "Setup GET Request",
+        "func": "msg.url = env.get(\"STELLIO_API_URL\");\nmsg.url += \"/ngsi-ld/v1/subscriptions/?limit=100\";\nmsg.headers = {};\nmsg.headers['Content-Type'] = 'application/ld+json';\nmsg.headers['NGSILD-Tenant'] = env.get('FIWARE_SERVICE');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 760,
+        "wires": [
+            [
+                "dec0da42277880d2"
+            ]
+        ]
+    },
+    {
+        "id": "dec0da42277880d2",
+        "type": "http request",
+        "z": "06d7c31d0c65ced0",
+        "g": "55f07cfc0580dabd",
+        "name": "http GET Request",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 760,
+        "wires": [
+            [
+                "68f7113c33a70625",
+                "2324518177c417b0"
+            ]
+        ]
+    },
+    {
+        "id": "68f7113c33a70625",
+        "type": "debug",
+        "z": "06d7c31d0c65ced0",
+        "g": "55f07cfc0580dabd",
+        "name": "debug 89",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "2324518177c417b0",
+        "type": "split",
+        "z": "06d7c31d0c65ced0",
+        "g": "55f07cfc0580dabd",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 170,
+        "y": 820,
+        "wires": [
+            [
+                "511a8dbe8d0825a1",
+                "17acb439e1677f10"
+            ]
+        ]
+    },
+    {
+        "id": "511a8dbe8d0825a1",
+        "type": "debug",
+        "z": "06d7c31d0c65ced0",
+        "g": "55f07cfc0580dabd",
+        "name": "debug 90",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "17acb439e1677f10",
+        "type": "function",
+        "z": "06d7c31d0c65ced0",
+        "g": "55f07cfc0580dabd",
+        "name": "function 6",
+        "func": "msg.url = env.get(\"STELLIO_API_URL\");\nmsg.url += \"/ngsi-ld/v1/subscriptions/\"\nmsg.url += msg.payload.id\n\nmsg.headers = {};\nmsg.headers['Content-Type'] = 'application/ld+json';\nmsg.headers['NGSILD-Tenant'] = env.get(\"FIWARE_SERVICE\")\n\nmsg.payload = {}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 880,
+        "wires": [
+            [
+                "dc53eea83067c843"
+            ]
+        ]
+    },
+    {
+        "id": "dc53eea83067c843",
+        "type": "http request",
+        "z": "06d7c31d0c65ced0",
+        "g": "55f07cfc0580dabd",
+        "name": "",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 390,
+        "y": 880,
+        "wires": [
+            [
+                "6d291d06871d78a6",
+                "22a1958646c2fbc5"
+            ]
+        ]
+    },
+    {
+        "id": "6d291d06871d78a6",
+        "type": "debug",
+        "z": "06d7c31d0c65ced0",
+        "g": "55f07cfc0580dabd",
+        "name": "debug 91",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "22a1958646c2fbc5",
+        "type": "join",
+        "z": "06d7c31d0c65ced0",
+        "g": "55f07cfc0580dabd",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 170,
+        "y": 940,
+        "wires": [
+            [
+                "bc522295a33c44e8",
+                "e4c1c432b5a7bde4"
+            ]
+        ]
     },
     {
         "id": "0f4f987967cd5ee1",
