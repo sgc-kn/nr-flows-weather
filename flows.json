@@ -163,7 +163,9 @@
             "4f74ad5e5977306f",
             "6b72bc271962b49d",
             "b28fd93e72eb1b58",
-            "f1444af0b1e65b61"
+            "f1444af0b1e65b61",
+            "daa378608c60a3e8",
+            "9b2c79b7b936c664"
         ],
         "x": 34,
         "y": 599,
@@ -206,12 +208,14 @@
             "fcd6d97fb29443f2",
             "8b83f397fbcba82f",
             "b383b941f77f0ae0",
-            "7bcc31bc8ad9e280"
+            "7bcc31bc8ad9e280",
+            "5090f6063ea3d8b2",
+            "0c1f64ed3c7ee86e"
         ],
         "x": 54,
         "y": 39,
         "w": 1332,
-        "h": 82
+        "h": 142
     },
     {
         "id": "4b9d98d3b233bad0",
@@ -3690,7 +3694,7 @@
         "y": 80,
         "wires": [
             [
-                "9cc12486380112b6"
+                "5090f6063ea3d8b2"
             ]
         ]
     },
@@ -3999,11 +4003,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
-        "y": 680,
+        "x": 400,
+        "y": 640,
         "wires": [
             [
-                "1cd60c1b1f0a4fa8"
+                "daa378608c60a3e8"
             ]
         ]
     },
@@ -4033,8 +4037,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
-        "y": 780,
+        "x": 750,
+        "y": 700,
         "wires": [
             [
                 "60a08e98832f9b46"
@@ -5233,8 +5237,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 380,
-        "y": 780,
+        "x": 640,
+        "y": 740,
         "wires": [
             [
                 "e04610e11257ccc9"
@@ -5353,6 +5357,90 @@
         "wires": [
             [
                 "09ba7a0f976cfd88"
+            ]
+        ]
+    },
+    {
+        "id": "daa378608c60a3e8",
+        "type": "function",
+        "z": "39d92afff0d156f4",
+        "g": "272f900e4c2441df",
+        "name": "Check INSTANCE",
+        "func": "const instance = env.get('INSTANCE');\n\nif (instance === 'production') {\n    node.status({ fill: \"green\", shape: \"dot\", text: \"INSTANCE = production\" });\n    return msg;\n} else {\n    node.status({ fill: \"red\", shape: \"ring\", text: `Flow gestoppt: INSTANCE = ${instance}` });\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 700,
+        "wires": [
+            [
+                "9b2c79b7b936c664"
+            ]
+        ]
+    },
+    {
+        "id": "9b2c79b7b936c664",
+        "type": "function",
+        "z": "39d92afff0d156f4",
+        "g": "272f900e4c2441df",
+        "name": "Check Service",
+        "func": "const service = env.get('FIWARE_SERVICE');\n\nif (service === 'weather') {\n    node.status({ fill: \"green\", shape: \"dot\", text: \"FIWARE_SERVICE = weather\" });\n    return msg;\n} else {\n    node.status({ fill: \"red\", shape: \"ring\", text: `Flow gestoppt: FIWARE_SERVICE = ${service}` });\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 760,
+        "wires": [
+            [
+                "1cd60c1b1f0a4fa8"
+            ]
+        ]
+    },
+    {
+        "id": "5090f6063ea3d8b2",
+        "type": "function",
+        "z": "39d92afff0d156f4",
+        "g": "446108a4de4fe5df",
+        "name": "Check INSTANCE",
+        "func": "const instance = env.get('INSTANCE');\n\nif (instance === 'production') {\n    node.status({ fill: \"green\", shape: \"dot\", text: \"INSTANCE = production\" });\n    return msg;\n} else {\n    node.status({ fill: \"red\", shape: \"ring\", text: `Flow gestoppt: INSTANCE = ${instance}` });\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 140,
+        "wires": [
+            [
+                "0c1f64ed3c7ee86e"
+            ]
+        ]
+    },
+    {
+        "id": "0c1f64ed3c7ee86e",
+        "type": "function",
+        "z": "39d92afff0d156f4",
+        "g": "446108a4de4fe5df",
+        "name": "Check Service",
+        "func": "const service = env.get('FIWARE_SERVICE');\n\nif (service === 'weather') {\n    node.status({ fill: \"green\", shape: \"dot\", text: \"FIWARE_SERVICE = weather\" });\n    return msg;\n} else {\n    node.status({ fill: \"red\", shape: \"ring\", text: `Flow gestoppt: FIWARE_SERVICE = ${service}` });\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 140,
+        "wires": [
+            [
+                "9cc12486380112b6"
             ]
         ]
     },
